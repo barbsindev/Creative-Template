@@ -1,0 +1,28 @@
+@mixin flex_links {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  // width: 100%;
+}
+
+@mixin flex_list {
+  display: flex;
+  // justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+@mixin twoColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+@mixin paragraph {
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.55;
+  letter-spacing: -0.7px;
+  text-align: left;
+}

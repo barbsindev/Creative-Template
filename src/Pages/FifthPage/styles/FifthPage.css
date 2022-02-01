@@ -1,0 +1,14 @@
+.fifth-page {
+  background-color: #134ae9;
+}
+
+.row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=FifthPage.css.map */

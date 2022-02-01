@@ -1,0 +1,123 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+@import "../../../scss/functions";
+@import "../../../scss/breakpoints";
+
+.first-page {
+  background-color: $dark-purple;
+  color: $base-color;
+}
+.top-text {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: $blue;
+  height: 26.5px;
+  p {
+    height: 19px;
+    font-size: 12px;
+    line-height: 1.55;
+    margin: auto;
+  }
+  a {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.55;
+    letter-spacing: -0.42px;
+    margin-left: 9px;
+    color: white;
+  }
+}
+
+header {
+  margin: 0 30px 192px 30px;
+  @include sm {
+    margin: 0;
+  }
+  @include md {
+    margin: 0;
+  }
+}
+.row {
+  @include twoColumns;
+  grid-gap: 4em;
+  margin: 0 120px 0 120px;
+  @include sm {
+    grid-template-columns: 1fr;
+    margin: 0;
+    gap: 0;
+  }
+  @include md {
+    grid-template-columns: 1fr;
+    margin: 0;
+    gap: 0;
+  }
+}
+.column {
+  @include sm {
+    margin: 0 20px;
+  }
+  @include md {
+    margin: 0 20px;
+  }
+  h1 {
+    font-family: SpaceGrotesk;
+    font-size: 68px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.01;
+    letter-spacing: -2.72px;
+    text-align: left;
+    color: $base-color;
+    margin: 10px 0 20px 0;
+    @include sm {
+      font-size: 38px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.01;
+      letter-spacing: -1.52px;
+      text-align: left;
+      width: auto;
+    }
+  }
+  p {
+    @include paragraph;
+    color: $base-color;
+    margin-bottom: 40px;
+    @include sm {
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.55;
+      letter-spacing: -0.53px;
+      text-align: left;
+      margin-bottom: 0;
+      margin-top: 20px;
+    }
+  }
+  form {
+    margin-bottom: 215px;
+    @include sm {
+      margin-top: 31px;
+      margin-bottom: 0;
+    }
+    @include md {
+      margin-bottom: 31px;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    @include sm {
+      margin-top: 54px;
+      margin-bottom: 51px;
+    }
+    @include md {
+      margin-bottom: 100px;
+    }
+  }
+}

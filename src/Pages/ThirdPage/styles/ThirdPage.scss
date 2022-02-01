@@ -1,0 +1,80 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+@import "../../../scss/functions";
+@import "../../../scss/breakpoints";
+
+.third-page {
+  background-image: linear-gradient(
+    to right,
+    $linear 0%,
+    #d6f4f8 66%,
+    #dceff9 100%
+  );
+  margin: 121px 53px 150px 53px;
+  @include sm {
+    margin: 51px 20px 0 20px;
+  }
+  h2 {
+    margin-top: 162px;
+    @include sm {
+      margin-top: 25px;
+      font-size: 30px;
+      margin-left: 30px;
+    }
+    p {
+      @include paragraph;
+    }
+  }
+  .row {
+    @include twoColumns;
+    margin-left: 144px;
+    margin-right: 0;
+    @include sm {
+      grid-template-columns: auto;
+      margin: 0;
+    }
+    @include md {
+      grid-template-columns: auto;
+      margin: 0;
+    }
+  }
+  .column {
+    @include sm {
+      margin: 0;
+      @include md {
+        &:first-of-type {
+          margin: 0 20px;
+        }
+      }
+    }
+    p {
+      margin-bottom: 161px;
+      @include sm {
+        font-size: 15px;
+        margin: 20px 0 46px 30px;
+      }
+      @include md {
+        margin: 0;
+      }
+    }
+    button {
+      margin-top: 100px;
+      margin-left: 33px;
+      @include sm {
+        margin: 0;
+        margin-left: 30px;
+        width: auto;
+      }
+    }
+  }
+  img {
+    width: 574px;
+    height: auto;
+    @include sm {
+      margin: 0;
+      width: 100%;
+      max-width: 348px;
+      margin-left: 10px;
+    }
+  }
+}

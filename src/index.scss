@@ -1,0 +1,106 @@
+@import "../src/scss/variables";
+@import "../src/scss/mixins";
+@import "../src/scss/functions";
+@import "../src//scss/breakpoints";
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../src/fonts/SpaceGrotesk-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("../src/fonts/NunitoSans-Regular.ttf");
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-family: "SpaceGrotesk";
+  font-size: 46px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.01;
+  letter-spacing: -1.84px;
+  text-align: left;
+  @include sm {
+  }
+}
+p {
+  font-family: "NunitoSans";
+}
+
+li {
+  cursor: pointer;
+  font-family: "NunitoSans";
+}
+form {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 6px;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  form {
+    grid-template-columns: auto;
+  }
+  button {
+    text-align: center;
+  }
+}
+
+.underline {
+  margin: 0 auto;
+  margin-top: 87px;
+  font-family: SpaceGrotesk;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.01;
+  letter-spacing: -0.64px;
+  text-align: left;
+  color: #1b263a;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-underline-position: under;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  p {
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.55;
+    letter-spacing: -0.53px;
+    text-align: left;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  img,
+  svg {
+    width: 100%;
+    height: auto;
+  }
+}
+// @media screen and (max-width: 820px) {
+//   h1,
+//   h2,
+//   h3,
+//   h4,
+//   p {
+//     text-align: center;
+//   }
+// }

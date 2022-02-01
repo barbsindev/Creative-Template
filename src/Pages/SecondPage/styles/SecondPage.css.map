@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,gBAAgB,CAAC;EEHf,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,QAAQ,EAAE,QAAQ;CFMnB;;AALD,AAEE,gBAFc,CAEd,EAAE,CAAC;EEEH,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,IAAI;CFHpB;;AAEH,AAAA,KAAK,CAAC;EACJ,eAAe,EAAE,SAAS;CAC3B",
+    "sources": [
+        "SecondPage.scss",
+        "../../../scss/_variables.scss",
+        "../../../scss/_mixins.scss",
+        "../../../scss/_functions.scss"
+    ],
+    "names": [],
+    "file": "SecondPage.css"
+}

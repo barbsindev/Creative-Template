@@ -1,0 +1,57 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+@import "../../../scss/functions";
+@import "../../../scss/breakpoints";
+.fourth-page {
+  justify-content: center;
+  align-items: center;
+  @include sm;
+  @include md {
+    margin: 100px 20px;
+  }
+  h2 {
+    text-align: center;
+    margin: 0;
+    margin-top: 150px;
+    @include sm {
+      margin-top: 45px;
+    }
+  }
+  p {
+    @include paragraph;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: -0.63px;
+    text-align: center;
+    margin: 21px 370px 0 280px;
+    @include sm {
+      margin: 21px 0 0 0;
+      font-size: 15px;
+    }
+    @include md {
+      margin: 50px 0;
+      text-align: left;
+    }
+  }
+  .group2 {
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 89px;
+    @include sm {
+      margin-top: 36px;
+    }
+  }
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,29 @@
+//  Smartphones
+$screen-sm-max: 480px;
+
+// Tablets
+$screen-md-max: 780px;
+$screen-md-min: 481px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min})and(max-width:#{$screen-md-max}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
