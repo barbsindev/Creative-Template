@@ -3,11 +3,14 @@
 @import "../../../scss/functions";
 @import "../../../scss/breakpoints";
 
-.second-page {
+#second-page {
   margin-top: 141px;
   @include sm {
     margin: 0;
     margin-top: 66px;
+  }
+  @include md {
+    padding: 40px;
   }
   h3 {
     font-family: SpaceGrotesk;
@@ -41,11 +44,12 @@
       padding: 0;
       margin: 0;
       height: 37px;
+      justify-content: space-around;
       @include sm {
-        justify-content: center;
+        // justify-content: center;
       }
       @include md {
-        justify-content: center;
+        // justify-content: space-around;
       }
       li {
         list-style-type: none;
@@ -134,7 +138,6 @@
     width: 100%;
     height: auto;
     max-width: 1003px;
-    height: 478px;
     @include sm {
       display: none;
     }

@@ -1,10 +1,10 @@
 import React from "react";
 import IMG3 from "../../assets/image3.png";
-
+import Button from "../../components/Button";
 import "./styles/ThirdPage.scss";
 export default function ThirdPage() {
   return (
-    <div className="third-page">
+    <div id="third-page">
       <div className="row">
         <div className="column">
           <h2>
@@ -18,7 +18,7 @@ export default function ThirdPage() {
           </p>
         </div>
         <div className="column">
-          <button>Add task</button>
+          <Button label="Add task" />
           <img src={IMG3} alt="image3" />
         </div>
       </div>

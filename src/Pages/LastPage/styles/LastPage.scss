@@ -10,6 +10,9 @@
   @include sm {
     margin-top: 54px;
   }
+  @include md {
+    padding: 0 40px;
+  }
 
   &__text {
     margin-bottom: 242px;

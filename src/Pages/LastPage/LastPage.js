@@ -5,7 +5,8 @@ import { ReactComponent as Arrow } from "../../assets/arrow-up.svg";
 import Button from "../../components/Button";
 import FormInput from "../../components/Input";
 import List from "../../components/List";
-import Footer from "../Footer";
+import Footer from "../Footer/Footer";
+import OpenMenu from "./OpenMenu";
 export default function LastPage() {
   return (
     <div className="footer">
@@ -29,7 +30,8 @@ export default function LastPage() {
         <div className="footer__row__column">
           <div className="mobile">
             <h4>Est </h4>
-            <Arrow1 className="arrow" />
+            {/* <Arrow1 className="arrow" /> */}
+            <OpenMenu />
           </div>
           <p>Vitae nec.</p>
           <p>Vitae nec.</p>
@@ -39,7 +41,8 @@ export default function LastPage() {
         <div className="footer__row__column">
           <div className="mobile">
             <h4>Est </h4>
-            <Arrow1 className="arrow" />
+            {/* <Arrow1 className="arrow" /> */}
+            <OpenMenu />
           </div>
           <p>Vitae nec.</p>
           <p>Vitae nec.</p>

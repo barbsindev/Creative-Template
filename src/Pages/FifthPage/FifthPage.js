@@ -4,7 +4,7 @@ import "./styles/FifthPage.scss";
 import Section from "../../components/Section";
 export default function FifthPage() {
   return (
-    <div className="fifth-page">
+    <div id="fifth-page">
       <div className="row">
         <div className="column">
           <div className="column__text">

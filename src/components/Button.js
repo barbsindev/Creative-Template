@@ -1,16 +1,25 @@
 import React, { useState } from "react";
 import "./Button.scss";
-// import "../scss/variables.scss";
+
 export default function Button(props) {
-  const [hover, setHover] = useState("false");
-  const handleMouseIn = (e) => {
-    e.target.style.backgroundColor = "white";
-    e.target.style.color = "blue";
-    e.target.style.transition = "0.5s";
+  const [background, setBackground] = useState("");
+  const [font, setFont] = useState("");
+  const setStyle = (background, font) => {
+    setBackground(background);
+    setFont(font);
   };
-  const handleMouseOut = (e) => {};
+  const styles = {
+    backgroundColor: background,
+    color: font,
+    transition: "0.5s",
+  };
+
   return (
-    <button onMouseOver={handleMouseIn} onMouseLeave={handleMouseOut}>
+    <button
+      style={styles}
+      onMouseOver={() => setStyle("#fff", "#1b263a")}
+      onMouseLeave={() => setStyle("")}
+    >
       {props.label}
     </button>
   );

@@ -2,12 +2,13 @@
 @import "../../../scss/mixins";
 @import "../../../scss/functions";
 @import "../../../scss/breakpoints";
-.fourth-page {
+#fourth-page {
   justify-content: center;
   align-items: center;
   @include sm;
   @include md {
     margin: 100px 20px;
+    padding: 0 40px;
   }
   h2 {
     text-align: center;

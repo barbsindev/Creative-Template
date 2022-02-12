@@ -1,26 +1,23 @@
 import React, { useState } from "react";
 import "./styles/FirstPage.scss";
-import { ReactComponent as Logo } from "../../assets/Logo.svg";
-import { ReactComponent as MenuIcon } from "../../assets/Burger.svg";
-import { ReactComponent as CloseMenu } from "../../assets/x.svg";
 import Button from "../../components/Button";
 import FormInput from "../../components/Input";
 import IMG from "../../assets/image.png";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import Navigation from "../Navigation";
+import Navigation from "../Navigation/Navigation";
 
 export default function FirstPage() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-  const { text } = useTypewriter({
-    words: ["quis", "fringilla", "hendrerit"],
-    loop: 0,
-  });
-
-  function hover(e) {
-    e.target.style.textDecoration = "underline";
-    console.log("underline");
-  }
+  // const { text } = useTypewriter({
+  //   words: ["quis", "fringilla", "hendrerit"],
+  //   loop: 0,
+  // });
+  console.log("xxx");
+  // function hover(e) {
+  //   e.target.style.textDecoration = "underline";
+  //   console.log("underline");
+  // }
   return (
     <div className="first-page">
       <div className="top-text">
@@ -37,8 +34,8 @@ export default function FirstPage() {
           <h1>
             Vel quis feugiat pharetra diam viverra{" "}
             <span className="typing-effect text-danger">
-              {text}
-              <Cursor cursorStyle="_" />
+              {/* {text} */}
+              {/* <Cursor cursorStyle="_" /> */}
             </span>
           </h1>
           <p>

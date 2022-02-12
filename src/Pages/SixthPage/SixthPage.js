@@ -13,11 +13,14 @@ export default function SixthPage() {
         <div className="column">
           <section>
             <p>Viverra enim diam gravida risus nisl.</p>
+
             <p>Lectus eu.</p>
+
             <h4>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
               enim vel.
             </h4>
+
             <p className="underline">Ut convallis massa.</p>
             <Rectangles className="reactangles" />
           </section>
