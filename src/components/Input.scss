@@ -7,6 +7,9 @@ input {
   @include md {
     padding: 20px;
   }
+  @include sm {
+    text-align: center;
+  }
   input::placeholder {
     font-family: SpaceGrotesk;
     font-size: 16px;

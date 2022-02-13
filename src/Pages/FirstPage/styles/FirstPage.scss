@@ -81,7 +81,7 @@ header {
       letter-spacing: -1.52px;
       text-align: left;
       width: auto;
-      margin-top: 100px;
+      margin-top: 48px;
     }
   }
   p {
@@ -103,7 +103,7 @@ header {
   form {
     margin-bottom: 215px;
     @include sm {
-      margin-top: 31px;
+      margin-top: 30px;
       margin-bottom: 0;
     }
     @include md {
@@ -116,10 +116,19 @@ header {
     height: auto;
     @include sm {
       margin-top: 54px;
-      margin-bottom: 51px;
+      margin-bottom: 50px;
+      &:first-of-type {
+        display: none;
+      }
     }
     @include md {
       margin-bottom: 100px;
+    }
+  }
+  .mobile-img {
+    display: none;
+    @include sm {
+      display: block;
     }
   }
 }

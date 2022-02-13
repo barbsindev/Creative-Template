@@ -13,13 +13,13 @@ import Section from "../../components/Section";
 export default function SecondPage() {
   return (
     <div id="second-page">
-      <section>
-        <FadeIn>
+      {" "}
+      <FadeIn>
+        <section>
           <h3>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant.
           </h3>
-        </FadeIn>
-        <FadeIn>
+
           <div className="container__logo">
             <ul>
               <li>
@@ -42,12 +42,9 @@ export default function SecondPage() {
               </li>
             </ul>
           </div>
-        </FadeIn>
-        <FadeIn>
+
           <p className="underline"> Ut eleifend</p>
-        </FadeIn>
-      </section>
-      <FadeIn>
+        </section>
         <section className="container__text">
           <Section
             header="Sem enim cursus orci at"
@@ -57,12 +54,10 @@ export default function SecondPage() {
           faucibus vitae nam sed. Faucibus vel laoreet."
           />
         </section>
-      </FadeIn>
-      <FadeIn>
         <section>
           <img src={IMGResp} alt="secondresp" className="resp-img img" />
           <img src={IMG2} alt="second" />
-        </section>{" "}
+        </section>
       </FadeIn>
     </div>
   );

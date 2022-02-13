@@ -3,6 +3,7 @@ import "./styles/FirstPage.scss";
 import Button from "../../components/Button";
 import FormInput from "../../components/Input";
 import IMG from "../../assets/image.png";
+import IMG1 from "../../assets/Firstpage1.svg";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Navigation from "../Navigation/Navigation";
 
@@ -49,6 +50,7 @@ export default function FirstPage() {
         </div>
         <div className="column">
           <img src={IMG} alt="email form" />
+          <img src={IMG1} alt="email form" className="mobile-img" />
         </div>
       </div>
     </div>
