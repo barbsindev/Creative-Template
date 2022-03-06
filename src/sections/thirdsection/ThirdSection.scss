@@ -1,0 +1,102 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+@import "../../scss/functions";
+@import "../../scss/breakpoints";
+
+#third-section {
+  background-image: linear-gradient(
+    to right,
+    $linear 0%,
+    #d6f4f8 66%,
+    #dceff9 100%
+  );
+  margin: 0px 53px 150px 53px;
+  padding: 0 0 0 120px;
+  @include sm {
+    margin: 51px 20px 0 20px;
+    padding: 0;
+  }
+  @include md {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 901px) and (max-width: 1100px) {
+    padding: 40px;
+  }
+  h2 {
+    margin-top: 162px;
+    @include heading;
+    @include sm {
+      margin-top: 25px;
+      margin-left: 30px;
+    }
+  }
+  p {
+    @include paragraph;
+    color: $dark-purple;
+    margin-bottom: 161px;
+    @include sm {
+      font-size: 15px;
+      margin: 20px 0 46px 30px;
+    }
+    @include md {
+      margin: 0;
+    }
+    @media screen and (min-width: 901px) and (max-width: 1100px) {
+      margin-bottom: 0;
+    }
+  }
+
+  .row {
+    @include twoColumns;
+    padding: 0;
+    margin-right: 0;
+    @media screen and (min-width: 901px) and (max-width: 1100px) {
+      grid-template-columns: auto;
+      margin: 0;
+      padding: 0;
+    }
+    @include sm {
+      -ms-grid-column: auto;
+      grid-template-columns: auto;
+
+      margin: 0;
+    }
+    @include md {
+      grid-template-columns: auto;
+    }
+    &__column {
+      @include sm {
+        margin: 0;
+        @include md {
+          &:first-of-type {
+            margin: 0 20px;
+          }
+        }
+      }
+      button {
+        margin-top: 100px;
+        margin-left: 33px;
+        @include sm {
+          margin: 0;
+          margin-left: 30px;
+          width: auto;
+        }
+        @media screen and (min-width: 901px) and (max-width: 1100px) {
+          margin: 0;
+        }
+      }
+      img {
+        @include sm {
+          margin: 0;
+          max-width: 348px;
+          margin-left: 10px;
+          display: block;
+        }
+        @media screen and (min-width: 901px) and (max-width: 1100px) {
+          margin-left: -40px;
+        }
+      }
+    }
+  }
+}

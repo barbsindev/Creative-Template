@@ -3,9 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import "../src/fonts/NunitoSans-Regular.ttf";
-import "../src/fonts/SpaceGrotesk-VariableFont_wght.ttf";
-import { UserProvider } from "./components/Context/UserContext";
+import { UserProvider } from "./components/context/UserContext";
 ReactDOM.render(
   <React.StrictMode>
     <UserProvider>

@@ -1,0 +1,127 @@
+@import "../../../scss/breakpoints";
+@import "../../../scss/mixins";
+@import "../../../scss/variables";
+
+#footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include sm {
+    grid-template-columns: 1fr;
+    padding-bottom: 102px;
+    margin-left: 0;
+  }
+  @include md {
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0;
+    margin-top: 80px;
+  }
+  p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: left;
+    @include sm {
+      &:last-of-type {
+        margin-top: 15px;
+      }
+    }
+    &:last-of-type {
+      opacity: 0.4;
+      line-height: 1.54;
+      margin-top: 21px;
+    }
+  }
+  .column {
+    @include sm {
+      margin: 0;
+    }
+    @include md {
+      margin: 0;
+    }
+  }
+
+  .links {
+    margin-bottom: 22px;
+    @include sm {
+      margin-top: 30px;
+      margin-bottom: 0;
+      justify-content: center;
+    }
+    @include md {
+      margin: 50px 0;
+    }
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+
+      @media (min-width: 900px) and (max-width: 1060px) {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 0;
+        vertical-align: top;
+        text-align: end;
+      }
+
+      @include sm {
+        padding: 0;
+        justify-content: space-between;
+      }
+      @include md {
+        padding: 0;
+        justify-content: space-between;
+        margin: 0;
+      }
+      @media screen and (max-width: 330px) {
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+      }
+    }
+    li {
+      list-style: none;
+      cursor: pointer;
+      margin: 0;
+      margin-right: 52px;
+      font-size: 15px;
+      line-height: 1.6;
+      letter-spacing: -0.53px;
+
+      &:last-of-type {
+        margin-right: 27px;
+        opacity: 1;
+      }
+
+      @media screen and (max-width: 1140px) {
+        margin-right: 0.8em;
+        margin: 0;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+
+      @include sm {
+        padding: 0;
+        margin-right: 0;
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+      @include md {
+        padding: 0;
+        margin-right: 0;
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

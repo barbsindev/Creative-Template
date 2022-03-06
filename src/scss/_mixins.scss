@@ -1,3 +1,4 @@
+@import "../scss/breakpoints";
 @mixin flex_links {
   display: flex;
   justify-content: space-between;
@@ -25,4 +26,31 @@
   line-height: 1.55;
   letter-spacing: -0.7px;
   text-align: left;
+}
+@mixin heading {
+  font-size: 46px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.01;
+  letter-spacing: -1.84px;
+  @include sm {
+    font-size: 30px;
+  }
+}
+@mixin underline {
+  margin-top: 80px;
+  font-family: SpaceGrotesk;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.01;
+  letter-spacing: -0.64px;
+  color: $dark-purple;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-underline-position: under;
+  cursor: pointer;
 }

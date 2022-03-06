@@ -1,19 +1,19 @@
 import "./App.css";
-import React, { useState, useContext, useEffect } from "react";
-import FirstPage from "../src/Pages/FirstPage/FirstPage";
-import SecondPage from "../src/Pages/SecondPage/SecondPage";
-import ThirdPage from "../src/Pages/ThirdPage/ThirdPage";
-import FourthPage from "../src/Pages/FourthPage/FourthPage";
-import FifthPage from "./Pages/FifthPage/FifthPage";
-import SixthPage from "./Pages/SixthPage/SixthPage";
-import LastPage from "./Pages/LastPage/LastPage";
-import { userContext } from "./components/Context/UserContext";
+import React from "react";
+import FirstSection from "./sections/firstsection/FirstSection";
+import SecondSection from "./sections/secondsection/SecondSection";
+import ThirdSection from "./sections/thirdsection/ThirdSection";
+import FourthSection from "./sections/fourthsection/FourthSection";
+import FifthSection from "./sections/fifthsection/FifthSection";
+import SixthSection from "./sections/sixthsection/SixthSection";
+import LastSection from "./sections/lastsection/LastSection";
+import { userContext } from "./components/context/UserContext";
 
 function App() {
   // const { user, changeUser } = useContext(userContext);
-  const { user, changeUser } = useContext(userContext);
-  console.log(user);
-  const [stopScroll, setStopScroll] = useState(false);
+  // const { user, changeUser } = useContext(userContext);
+  // console.log(user);
+  // const [stopScroll, setStopScroll] = useState(false);
 
   // useEffect(() => {
   //   if (!user.canScroll) {
@@ -24,15 +24,16 @@ function App() {
   // }, [user, changeUser]);
 
   return (
-    <div className={user.canScroll ? "stop_scroll" : "scroll"}>
-      <FirstPage />
-      <SecondPage />
-      <ThirdPage />
-      <FourthPage />
-      <FifthPage />
-      <SixthPage />
-      <LastPage />
-    </div>
+    // <div className={user.canScroll ? "stop_scroll" : "scroll"}>
+    <>
+      <FirstSection />
+      <SecondSection />
+      <ThirdSection />
+      <FourthSection />
+      <FifthSection />
+      <SixthSection />
+      <LastSection />
+    </>
   );
 }
 

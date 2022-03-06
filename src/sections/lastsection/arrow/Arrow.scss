@@ -1,0 +1,40 @@
+@import "../../../scss/mixins";
+.arrow {
+  display: none;
+  width: 100%;
+  height: auto;
+  @include sm {
+    display: block;
+    width: 14px;
+    margin-top: 9px;
+    margin-bottom: 18px;
+  }
+}
+
+.arrow::before,
+.arrow::after {
+  position: relative;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 1px;
+  background: white;
+  transition: 0.3s ease-in-out;
+}
+
+.arrow::before {
+  transform: rotate(45deg);
+}
+
+.arrow::after {
+  left: 6px;
+  top: -1px;
+  transform: rotate(-45deg);
+}
+.active::before {
+  transform: rotate(-45deg);
+}
+
+.active:after {
+  transform: rotate(45deg);
+}

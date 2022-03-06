@@ -1,0 +1,39 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+@import "../../scss/breakpoints";
+.section {
+  h2 {
+    margin-top: 152px;
+    @include heading;
+    @include sm {
+      margin: 0;
+      margin-top: 82px;
+    }
+    @include md {
+      margin: 175px 0 20px 0;
+    }
+  }
+  p {
+    margin: 20px 588px 20px 0;
+    @media screen and (min-width: 900px) and (max-width: 1100px) {
+      margin: 0;
+    }
+    @media screen and (min-width: 1101px) and (max-width: 1200px) {
+      margin-right: 200px;
+    }
+    @include paragraph;
+    @include sm {
+      margin: 20px 0;
+      font-size: 15px;
+    }
+    @include md {
+      margin: 20px 0;
+    }
+  }
+  a {
+    @include underline;
+    @include sm {
+      margin: 0;
+    }
+  }
+}

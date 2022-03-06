@@ -1,0 +1,142 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+@import "../../scss/functions";
+@import "../../scss/breakpoints";
+
+#last-section {
+  padding: 90px 120px;
+  background-color: $dark-purple;
+  color: $base-color;
+  @include sm {
+    padding: 54px 20px 20px 20px;
+  }
+  @include md {
+    padding: 0;
+    padding: 70px 40px;
+  }
+  .text {
+    margin-bottom: 242px;
+    @include sm {
+      margin-bottom: 153px;
+    }
+    @include md {
+      margin-bottom: 100px;
+    }
+    h2 {
+      @include heading;
+      margin: 0;
+    }
+    p {
+      @include paragraph;
+      margin-top: 15px;
+      margin-bottom: 0;
+    }
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: flex-start;
+    margin: 0;
+    margin-bottom: 123px;
+    padding: 0;
+    @include sm {
+      grid-template-columns: 1fr;
+      padding: 0;
+      margin: 0;
+    }
+    @include md {
+      padding: 0;
+      margin: 0;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 20px;
+    }
+    h4 {
+      font-family: SpaceGrotesk;
+      font-size: 18px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.01;
+      letter-spacing: -0.72px;
+      text-align: left;
+      margin: 0;
+      margin-bottom: 36px;
+      @include sm {
+        font-size: 20px;
+        margin-bottom: 18px;
+      }
+      @include md {
+        text-align: center;
+      }
+    }
+    &__column {
+      @include sm {
+        margin: 0;
+      }
+      @include md {
+        margin: 0;
+        gap: 0;
+        justify-content: center;
+        justify-items: center;
+        &:last-of-type {
+          grid-column: 1 / span 4;
+        }
+      }
+      p {
+        cursor: pointer;
+        font-size: 15px;
+        font-style: normal;
+        line-height: 1.6;
+        letter-spacing: -0.53px;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 10px;
+        @include sm {
+          display: none;
+          margin-top: 15px;
+        }
+        @include md {
+          text-align: center;
+        }
+      }
+      &__box {
+        font-size: 12px;
+        width: 100%;
+        width: 282px;
+        height: 91.1px;
+        justify-content: center;
+        border: solid 0.5px rgb(255, 255, 255, 0.3);
+        padding: 20px 20px 10px 20px;
+        line-height: 1.4;
+        letter-spacing: -0.18px;
+        position: relative;
+        @include sm {
+          display: block;
+          margin: 15px 0 35px 0;
+          width: auto;
+        }
+        @include md {
+          margin: 0;
+          width: auto;
+          margin-top: 30px;
+        }
+        .arrow-up {
+          position: absolute;
+          width: 10px;
+          height: auto;
+          top: 6px;
+          right: 6px;
+        }
+      }
+      &--underline {
+        @include sm {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: solid 0.5px rgb(255, 255, 255, 0.3);
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+@import "../../scss/functions";
+@import "../../scss/breakpoints";
+
+#fifth-section {
+  background-color: $blue;
+  color: #fff;
+  margin: 0 54px;
+  padding: 120px 0 198px 0;
+  @include sm {
+    margin: 0;
+    padding: 35px 0 10px 0;
+  }
+  @include md {
+    padding: 100px 0;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0;
+    @include sm {
+      grid-template-columns: auto;
+      margin: 35px 20px 69px 20px;
+      padding: 0;
+    }
+    @include md {
+      grid-template-columns: auto;
+      margin: 35px 20px 69px 20px;
+      padding: 0;
+    }
+    &__column {
+      grid-column: 1/2;
+      grid-row: 1;
+      @include sm {
+        grid-column: revert;
+        grid-row: 1;
+        margin: 0;
+        &:last-of-type {
+          grid-row: initial;
+        }
+      }
+      @include md {
+        grid-column: revert;
+        grid-row: 1;
+        margin: 0;
+        &:last-of-type {
+          grid-row: initial;
+        }
+      }
+      &:last-of-type {
+        grid-column: 1 / span 2;
+        justify-self: end;
+      }
+    }
+    h2 {
+      margin: 0;
+    }
+    p {
+      @include paragraph;
+      margin: 0;
+      font-size: 18px;
+      margin: 21px 0;
+    }
+    a {
+      color: #fff;
+      text-decoration-color: #fff;
+    }
+    .vector-compilation {
+      justify-content: end;
+      justify-items: end;
+      margin-top: 69px;
+      @include sm {
+        margin-top: 56px;
+      }
+      @include md {
+        margin: 0;
+      }
+      @media screen and (min-width: 901px) and (max-width: 1200px) {
+        margin-top: 100px;
+      }
+    }
+  }
+}

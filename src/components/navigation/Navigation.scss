@@ -1,0 +1,117 @@
+@import "../../scss/breakpoints";
+@import "../../scss/mixins";
+@import "../../scss/variables";
+.navbar {
+  @include flex_links;
+  font-size: 16px;
+  margin: 10px 0;
+  max-width: 100%;
+  @include sm {
+    margin: 24px 20px 0 20px;
+  }
+  @include md {
+    margin: 50px 20px 10px 10px;
+  }
+  &__right,
+  &__left {
+    display: flex;
+    &__links {
+      @include sm {
+        padding-left: 0;
+      }
+      li {
+        @include md {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__right {
+    justify-content: flex-start;
+    &__links {
+      @include flex_list;
+      padding: 0 24px;
+      @include sm {
+        display: none;
+      }
+      @include md {
+        display: none;
+      }
+      button {
+        width: 160px;
+        height: 47.9px;
+        padding: 16px 11.2px 15.9px 11.4px;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+  }
+  &__left {
+    justify-content: flex-end;
+    margin-left: 64px;
+    @include sm {
+      position: absolute;
+      margin-left: 0;
+    }
+    @include md {
+      position: absolute;
+      margin-left: 0;
+    }
+    &__links {
+      margin-left: 64px;
+      @include flex_list;
+      padding: 0 24px;
+      @media screen and (min-width: 900px) and (max-width: 1100px) {
+        margin-left: 30px;
+      }
+      @include sm {
+      }
+      li {
+        position: relative;
+        margin-right: 36px;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+li {
+  padding: 10px;
+  position: relative;
+  a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 0;
+    position: relative;
+  }
+  a:hover:after {
+    width: 100%;
+  }
+  a:after {
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    background: #ffffff;
+    transition: width 0.7s ease 0s, left 0.5s ease 0s;
+    width: 0;
+  }
+}
+
+.navbar__left__links {
+  @include sm {
+    display: none;
+  }
+}
+.logo {
+  max-width: 80px;
+  max-height: 21px;
+  align-self: center;
+  @include md {
+    padding-left: 40px;
+  }
+}

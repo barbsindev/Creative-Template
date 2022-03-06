@@ -1,0 +1,117 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+@import "../../scss/functions";
+@import "../../scss/breakpoints";
+
+#second-section {
+  color: $dark-purple;
+  padding: 120px;
+  @include sm {
+    padding: 20px;
+  }
+  @include md {
+    padding: 40px;
+  }
+  @media screen and (min-width: 901px) and (max-width: 1300px) {
+    padding: 50px;
+  }
+  .container {
+    &__logo {
+      justify-content: center;
+      text-align: center;
+      @include sm {
+        margin: 0;
+      }
+      @include md {
+        margin: 0;
+      }
+      h3 {
+        font-size: 30px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.1;
+        letter-spacing: -0.9px;
+        margin-bottom: 80px;
+        @include sm {
+          font-size: 24px;
+        }
+      }
+      ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 80px;
+        height: 37px;
+        justify-content: space-around;
+        li {
+          margin-right: 67px;
+          @include sm {
+            margin: 0;
+            // display: none;
+            &:first-of-type {
+              display: block;
+              // margin-left: 20px;
+            }
+            &:nth-of-type(3) {
+              display: block;
+              // margin-left: 67px;
+            }
+          }
+          @include md {
+            margin: 0;
+            display: none;
+            &:first-of-type {
+              display: block;
+              margin-left: 20px;
+            }
+            &:nth-of-type(3) {
+              display: block;
+              margin-left: 67px;
+            }
+          }
+          @include md {
+            &:nth-of-type(5) {
+              display: block;
+              margin-left: 67px;
+            }
+          }
+        }
+        :last-of-type {
+          margin-right: 0;
+        }
+      }
+      a {
+        @include underline;
+      }
+    }
+    &__text {
+      @include sm {
+        margin: 0;
+      }
+      @include md {
+        margin: 0;
+      }
+    }
+    &__img--default {
+      display: block;
+      margin: 0 auto;
+      max-width: 1003px;
+      @include sm {
+        display: none;
+      }
+      @include md {
+        max-width: none;
+      }
+    }
+    &__img--responsive {
+      display: none;
+      @include sm {
+        display: block;
+        margin: 0;
+        margin-top: 60px;
+        max-width: none;
+      }
+    }
+  }
+}
