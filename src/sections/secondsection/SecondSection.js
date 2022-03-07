@@ -11,7 +11,6 @@ import Profilemob from "../../assets/images/Profile-mobile.png";
 import Profile from "../../assets/images/Profile.png";
 import Section from "../../components/text/Text";
 import Marquee from "react-fast-marquee";
-import Slider from "./slider";
 export default function SecondSection() {
   const [offsetLeft, setOffsetLeft] = useState(0);
   const listRef = useRef(null);
@@ -34,7 +33,6 @@ export default function SecondSection() {
     <section id="second-section" className="container">
       <FadeIn>
         <section className="container__logo">
-          <Slider />
           <h3>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant.
           </h3>

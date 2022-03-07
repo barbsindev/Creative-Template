@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { userContext } from "../../../context/UserContext";
 import Button from "../../../button/Button";
 import "./SideNav.scss";
 import Burger from "../Burger";

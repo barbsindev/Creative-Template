@@ -7,7 +7,6 @@ import FourthSection from "./sections/fourthsection/FourthSection";
 import FifthSection from "./sections/fifthsection/FifthSection";
 import SixthSection from "./sections/sixthsection/SixthSection";
 import LastSection from "./sections/lastsection/LastSection";
-import { userContext } from "./components/context/UserContext";
 
 function App() {
   // const { user, changeUser } = useContext(userContext);
