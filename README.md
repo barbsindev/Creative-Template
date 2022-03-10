@@ -1,3 +1,12 @@
+# Overview
+
+This is a React project which was development was based on following website design with attention to details.
+
+It features fade in on scroll and marquee animations, typewriter and responsivness on popular devices.
+
+<img width="1273" alt="Screenshot 2022-03-10 at 22 31 22" src="https://user-images.githubusercontent.com/77361223/157767728-8fab4d4f-6e88-4731-bcf2-14eb88379307.png">
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
