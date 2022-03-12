@@ -10,7 +10,7 @@ The main purpose of the project was to follow design with main focus on details 
 
 ## Features
 
-Functional components, Reusable components, fade in on scroll, marquee animation, typewriter, burger menu, responsivness.
+Functional components, reusable components, fade in on scroll, marquee animation, typewriter, burger menu, responsivness.
 
 ## Getting Started with Create React App
 
