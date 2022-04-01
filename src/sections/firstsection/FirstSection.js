@@ -4,7 +4,7 @@ import FormInput from "../../components/input/Input";
 import MainImg from "../../assets/images/Main-img.png";
 import MainImgMob from "../../assets/images/Main-img-mobile.png";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import Navigation from "../../components/navigation/Navigation";
+import Navigation from "../../components/navigation/nav/Navigation";
 
 export default function FirstSection() {
   const { text } = useTypewriter({

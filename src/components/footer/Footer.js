@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/Footer.scss";
+import "../footer/Footer.scss";
 export default function Footer() {
   return (
     <section id="footer">

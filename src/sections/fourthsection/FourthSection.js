@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactComponent as Statistics } from "../../assets/images/Statistics.svg";
 import "./FourthSection.scss";
-import FadeIn from "../../components/animation/FadeIn";
+import FadeIn from "../../components/animation/fadein/FadeIn";
 export default function FourthSection() {
   return (
     <section id="fourth-section">

@@ -2,7 +2,7 @@ import React from "react";
 import { ReactComponent as Vector } from "../../assets//images/Vector.svg";
 import "./FifthSection.scss";
 import Text from "../../components/text/Text";
-import FadeIn from "../../components/animation/FadeIn";
+import FadeIn from "../../components/animation/fadein/FadeIn";
 export default function FifthSection() {
   return (
     <section id="fifth-section">

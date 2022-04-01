@@ -1,11 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./OpenMenu.scss";
 
-import OutsideClick from "../../../components/navigation/OutsideClick";
-import Arrow from "../arrow/Arrow";
+import Arrow from "../../../components/arrow/Arrow";
 export default function OpenMenu() {
   const dropdownRef = useRef();
-  const [isActive, setIsActive] = OutsideClick(false);
+  const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => setIsActive(!isActive);
 

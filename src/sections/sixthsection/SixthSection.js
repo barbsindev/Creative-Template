@@ -2,7 +2,7 @@ import React from "react";
 import "./SixthSection.scss";
 import { ReactComponent as Rectangles } from "../../assets/images/Rectangles.svg";
 import { ReactComponent as Hero } from "../../assets/images/Hero.svg";
-import FadeIn from "../../components/animation/FadeIn";
+import FadeIn from "../../components/animation/fadein/FadeIn";
 export default function SixthPage() {
   return (
     <section id="sixth-section">

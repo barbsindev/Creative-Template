@@ -1,6 +1,6 @@
-@import "../../scss/breakpoints";
-@import "../../scss/mixins";
-@import "../../scss/variables";
+@import "../../../scss/breakpoints";
+@import "../../../scss/mixins";
+@import "../../../scss/variables";
 .navbar {
   @include flex_links;
   font-size: 16px;

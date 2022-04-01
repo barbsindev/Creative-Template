@@ -1,17 +1,14 @@
 import React from "react";
-import { ReactComponent as Logo } from "../../assets/Logo.svg";
-import SideNav from "./burger/sidenav/SideNav";
-import Button from "../button/Button";
+import { ReactComponent as Logo } from "../../../assets/images/Logo.svg";
+import SideNav from "../sidenav/SideNav";
+import Button from "../../button/Button";
 import "./Navigation.scss";
 
 export default function Navigation() {
   return (
     <nav className="navbar">
       <div className="navbar__left">
-        <Logo
-          style={{ width: "100%", height: "auto", position: "relative" }}
-          className="logo"
-        />
+        <Logo style={{ width: "80", height: "21" }} className="logo" />
         <ul className="navbar__left__links">
           <li>
             <a href="#second-page">Cras.</a>
@@ -28,7 +25,7 @@ export default function Navigation() {
         </ul>
       </div>
       <div className="navbar__right">
-        {/* <SideNav /> */}
+        <SideNav />
         <ul className="navbar__right__links">
           <li>
             <a href="#">Log in</a>

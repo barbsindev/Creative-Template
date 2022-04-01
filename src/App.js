@@ -9,21 +9,7 @@ import SixthSection from "./sections/sixthsection/SixthSection";
 import LastSection from "./sections/lastsection/LastSection";
 
 function App() {
-  // const { user, changeUser } = useContext(userContext);
-  // const { user, changeUser } = useContext(userContext);
-  // console.log(user);
-  // const [stopScroll, setStopScroll] = useState(false);
-
-  // useEffect(() => {
-  //   if (!user.canScroll) {
-  //     document.body.style.overflow = "hidden";
-  //   } else {
-  //     document.body.style.overflow = "initial";
-  //   }
-  // }, [user, changeUser]);
-
   return (
-    // <div className={user.canScroll ? "stop_scroll" : "scroll"}>
     <>
       <FirstSection />
       <SecondSection />

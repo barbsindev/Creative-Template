@@ -2,7 +2,7 @@ import React from "react";
 import Schedule from "../../assets/images/Schedule.png";
 import Button from "../../components/button/Button";
 import "./ThirdSection.scss";
-import FadeIn from "../../components/animation/FadeIn";
+import FadeIn from "../../components/animation/fadein/FadeIn";
 export default function ThirdPage() {
   return (
     <section id="third-section">
