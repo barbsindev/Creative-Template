@@ -13,7 +13,7 @@ export default function FirstSection() {
   });
 
   return (
-    <section id="first-section">
+    <div id="first-section">
       <div className="top-text">
         <p>Vel quis feugiat pharetra diam vivera quis. </p>
         <a href="#first-section">Take me there</a>
@@ -21,7 +21,8 @@ export default function FirstSection() {
       <header>
         <Navigation />
       </header>
-      <div className="row">
+
+      <section className="row">
         <div className="row__column">
           <h1>
             Vel quis feugiat pharetra diam viverra
@@ -37,6 +38,7 @@ export default function FirstSection() {
             label="Request a demo"
           />
         </div>
+
         <div className="row__column">
           <img
             src={MainImg}
@@ -49,7 +51,7 @@ export default function FirstSection() {
             className="row__column__img--responsive"
           />
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }

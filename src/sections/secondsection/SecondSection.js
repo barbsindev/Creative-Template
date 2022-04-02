@@ -15,7 +15,7 @@ export default function SecondSection() {
   const listRef = useRef(null);
 
   return (
-    <section id="second-section" className="container">
+    <div id="second-section" className="container">
       <FadeIn>
         <section className="container__logo">
           <h3>
@@ -71,6 +71,6 @@ export default function SecondSection() {
           />
         </section>
       </FadeIn>
-    </section>
+    </div>
   );
 }

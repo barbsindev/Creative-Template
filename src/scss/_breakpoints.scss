@@ -1,11 +1,7 @@
-//  Smartphones
 $screen-sm-max: 480px;
-
-// Tablets
 $screen-md-max: 900px;
 $screen-md-min: 481px;
-// Large tablets and desktops
-$screen-lg-min: 821px;
+$screen-lg-min: 901px;
 
 // Small devices
 @mixin sm {

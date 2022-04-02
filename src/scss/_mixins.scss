@@ -3,12 +3,10 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  // width: 100%;
 }
 
 @mixin flex_list {
   display: flex;
-  // justify-content: space-around;
   align-items: center;
   list-style-type: none;
 }
@@ -53,4 +51,13 @@
   text-decoration-color: blue;
   text-underline-position: under;
   cursor: pointer;
+}
+
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background: transparent;
+  border: none;
 }
